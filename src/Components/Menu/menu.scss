@@ -45,11 +45,11 @@
 
     .close::before {
       transform: translateY(5px) rotateZ(45deg);
-      background-color: gray;
+      background-color: rgb(196, 196, 196);
     }
     .close::after {
       transform: translateY(-5px) rotateZ(-45deg);
-      background-color: gray;
+      background-color: rgb(196, 196, 196);
     }
 
     .expanded {
