@@ -1,12 +1,27 @@
+@import "./Components/Menu/menu.scss";
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-.logo {
-  font-family: "Yellowtail", cursive;
-  padding: 1rem;
-  font-size: 2rem;
-  color: rgb(49, 49, 49);
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.App {
+  position: relative;
+  margin: 1rem;
+}
+
+// Nav
+nav {
+  @include flexCenter();
+  justify-content: space-between;
 }

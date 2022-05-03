@@ -1,9 +1,12 @@
+import Nav from "./Components/Nav/Nav";
+import Menu from "./Components/Menu/Menu";
 import "./App.scss";
 
 function App() {
   return (
     <div className="App">
-      <h1 className="logo">Fugarino</h1>
+      <Nav />
+      <Menu />
     </div>
   );
 }

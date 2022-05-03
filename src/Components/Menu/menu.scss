@@ -1,0 +1,70 @@
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  .container {
+    position: relative;
+
+    button {
+      @include flexCenter();
+      position: absolute;
+      right: 0;
+      width: 48px;
+      height: 36px;
+      border: none;
+      cursor: pointer;
+      border-radius: 20px;
+      background-color: #fff;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        left: 13px;
+        width: 30px;
+        height: 4px;
+        background-color: black;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+      }
+
+      &::before {
+        top: 11px;
+      }
+
+      &::after {
+        bottom: 11px;
+      }
+    }
+
+    .close::before {
+      transform: translateY(5px) rotateZ(45deg);
+      background-color: gray;
+    }
+    .close::after {
+      transform: translateY(-5px) rotateZ(-45deg);
+      background-color: gray;
+    }
+
+    .expanded {
+      width: 300px;
+      height: 90vh;
+      padding: 1rem;
+      box-shadow: 0 0 5px 2px rgb(215, 215, 215);
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      background-color: #fff;
+    }
+    .collapsed {
+      width: 40px;
+      height: 35px;
+      transition: all 0.3s ease;
+    }
+  }
+}
