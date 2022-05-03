@@ -1,5 +1,6 @@
 import Nav from "./Components/Nav/Nav";
 import Menu from "./Components/Menu/Menu";
+import Hero from "./Components/Hero/Hero";
 import "./App.scss";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <Nav />
       <Menu />
+      <Hero />
     </div>
   );
 }
