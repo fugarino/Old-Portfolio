@@ -18,10 +18,41 @@ body {
 
 .App {
   position: relative;
-  margin: 1rem;
+  margin: 1rem 2rem;
 }
 
 // Nav
 nav {
   @include flexCenter();
+  position: relative;
+  top: -5px;
+
+  .logo {
+    color: #ff754e;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  .cv-email {
+    font-size: 0.8rem;
+    margin-left: 20px;
+    position: relative;
+    top: 6px;
+    cursor: pointer;
+    color: rgb(94, 94, 94);
+
+    &:hover {
+      color: #000;
+    }
+  }
+  .divider {
+    font-size: 0.8rem;
+    position: relative;
+    top: 6px;
+    margin-left: 5px;
+    color: rgb(126, 126, 126);
+  }
+  .mail {
+    margin-left: 5px;
+  }
 }

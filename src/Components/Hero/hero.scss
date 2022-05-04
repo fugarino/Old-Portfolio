@@ -3,8 +3,8 @@
   height: 500px;
 
   span {
-    color: rgb(145, 145, 145);
-    font-family: "Yellowtail";
+    color: rgb(174, 174, 174);
+    font-family: "Kalam";
   }
 
   .hero-grid {
@@ -13,26 +13,35 @@
     height: 100%;
 
     .hero-text {
-      margin-left: 4rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
       user-select: none;
+      position: relative;
+      top: 25px;
+
+      .closing-span {
+        margin-top: 5.7rem;
+      }
 
       h1 {
         font-size: 3.5rem;
         margin-bottom: 0.3rem;
+        margin-left: 2.5rem;
+        margin-top: 3.5rem;
       }
 
       h4 {
         font-size: 1.5rem;
         font-weight: 500;
         color: rgb(94, 94, 94);
+        margin-left: 2.5rem;
       }
 
       p {
         margin-top: 1rem;
         color: gray;
+        margin-left: 2.5rem;
       }
 
       button {
@@ -44,9 +53,9 @@
         border-radius: 10px;
         background-color: #3a3847;
         margin-top: 2rem;
-        margin-bottom: 1rem;
         cursor: pointer;
         border: 2px solid #3a3847;
+        margin-left: 2.5rem;
 
         &:hover {
           background-color: #fff;
