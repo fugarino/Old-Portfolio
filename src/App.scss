@@ -1,65 +1,23 @@
 @import "./Components/Menu/menu.scss";
 @import "./Components/Hero/hero.scss";
-
-@mixin flexCenter {
-  display: flex;
-  align-items: center;
-}
+@import "./Components/Nav/nav.scss";
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
 
-body {
-  font-family: "Poppins", sans-serif;
-}
-
-.App {
-  position: relative;
-  margin: 1rem 2rem;
-
-  .tag {
-    color: rgb(161, 161, 161);
-    font-family: "Kalam";
-  }
-}
-
-// Nav
-nav {
-  @include flexCenter();
-  position: relative;
-  top: -10px;
-  user-select: none;
-
-  .logo {
-    color: #ff754e;
-    font-weight: 700;
-    font-size: 2rem;
-    cursor: pointer;
+  body {
+    font-family: "Poppins", sans-serif;
   }
 
-  .cv-email {
-    font-size: 0.8rem;
-    margin-left: 20px;
+  .App {
     position: relative;
-    top: 6px;
-    cursor: pointer;
-    color: rgb(94, 94, 94);
+    margin: 1rem 2rem;
 
-    &:hover {
-      color: #000;
+    .tag {
+      color: rgb(161, 161, 161);
+      font-family: "Kalam";
     }
-  }
-  .divider {
-    font-size: 0.8rem;
-    position: relative;
-    top: 6px;
-    margin-left: 5px;
-    color: rgb(126, 126, 126);
-  }
-  .mail {
-    margin-left: 5px;
   }
 }
