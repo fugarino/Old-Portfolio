@@ -3,11 +3,12 @@
   overflow: hidden;
   display: flex;
   justify-content: center;
+
   .hero-grid {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 2.5rem;
+    margin-left: 3.5rem;
 
     .hero-text {
       display: flex;
@@ -39,10 +40,11 @@
 
       button {
         border: none;
-        // padding: 0.6rem 0.9rem;
+        padding: 0.6rem 0;
         font-family: "Poppins";
         // max-width: 117px;
-        width: 9vw;
+        width: 8vw;
+        // height: 5vh;
         font-size: 0.9vw;
         color: #fff;
         border-radius: 10px;
