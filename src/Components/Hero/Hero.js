@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "./MainHero.gif";
+import Image from "./NewHero.gif";
 
 const Hero = () => {
   return (

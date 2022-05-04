@@ -26,6 +26,7 @@ nav {
   @include flexCenter();
   position: relative;
   top: -10px;
+  user-select: none;
 
   .logo {
     color: #ff754e;
