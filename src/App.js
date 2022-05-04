@@ -8,7 +8,9 @@ function App() {
     <div className="App">
       <Nav />
       <Menu />
+      <span className="tag">{"<About Me>"}</span>
       <Hero />
+      <span className="tag">{"</About Me>"}</span>
     </div>
   );
 }
