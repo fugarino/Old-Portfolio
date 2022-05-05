@@ -23,7 +23,7 @@ function App() {
         <div className={menuSize}>
           <div className="menu-content">
             <div className="top">
-              <h4>Contents</h4>
+              <h4>Content</h4>
               <button>
                 <FontAwesomeIcon icon={faFolderOpen} className="icon" />
                 <h3>Projects</h3>
@@ -36,7 +36,6 @@ function App() {
                 <FontAwesomeIcon icon={faAddressBook} className="icon" />
                 <h3>Contact</h3>
               </button>
-              <hr />
               <h4 className="resources">Resources</h4>
               <button>
                 <FontAwesomeIcon icon={faLinkedinIn} className="icon" />
