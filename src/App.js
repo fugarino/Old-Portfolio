@@ -11,9 +11,15 @@ function App() {
 
   useEffect(() => {
     if (menuSize === "expanded") {
-      setContent(<div className={menuSize}></div>);
+      setContent(
+        <div className={menuSize}>
+          <div className="menu-content">
+            <button>Projects</button>
+          </div>
+        </div>
+      );
     } else {
-      setContent(<div className={menuSize}></div>);
+      setContent(<div className={menuSize}>{/* <h1 className="menu-content"></h1> */}</div>);
     }
   }, [menuSize]);
 

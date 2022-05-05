@@ -4,7 +4,7 @@ const Menu = ({ handleClick, menuIcon, content }) => {
   return (
     <menu className="menu">
       <div className="container">
-        <button className={menuIcon} onClick={handleClick}></button>
+        <button className={`btn ${menuIcon}`} onClick={handleClick}></button>
         {content}
       </div>
     </menu>
