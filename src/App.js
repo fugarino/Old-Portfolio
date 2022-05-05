@@ -2,6 +2,14 @@ import React, { useState, useEffect } from "react";
 import Nav from "./Components/Nav/Nav";
 import Menu from "./Components/Menu/Menu";
 import Hero from "./Components/Hero/Hero";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFolderOpen } from "@fortawesome/free-regular-svg-icons";
+import { faFileCode } from "@fortawesome/free-regular-svg-icons";
+import { faAddressBook } from "@fortawesome/free-regular-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { faClipboard } from "@fortawesome/free-regular-svg-icons";
+import { faHdd } from "@fortawesome/free-regular-svg-icons";
 import "./App.scss";
 
 function App() {
@@ -14,7 +22,41 @@ function App() {
       setContent(
         <div className={menuSize}>
           <div className="menu-content">
-            <button>Projects</button>
+            <div className="top">
+              <h4>Contents</h4>
+              <button>
+                <FontAwesomeIcon icon={faFolderOpen} className="icon" />
+                <h3>Projects</h3>
+              </button>
+              <button>
+                <FontAwesomeIcon icon={faFileCode} className="icon" />
+                <h3>Skills</h3>
+              </button>
+              <button className="contact">
+                <FontAwesomeIcon icon={faAddressBook} className="icon" />
+                <h3>Contact</h3>
+              </button>
+              <hr />
+              <h4 className="resources">Resources</h4>
+              <button>
+                <FontAwesomeIcon icon={faLinkedinIn} className="icon" />
+                <h3>Linked In</h3>
+              </button>
+              <button>
+                <FontAwesomeIcon icon={faGithub} className="icon" />
+                <h3>GitHub</h3>
+              </button>
+            </div>
+            <div className="bottom">
+              <button>
+                <FontAwesomeIcon icon={faHdd} className="icon" />
+                <h3>Download CV</h3>
+              </button>
+              <button>
+                <FontAwesomeIcon icon={faClipboard} className="icon" />
+                <h3>Copy Email</h3>
+              </button>
+            </div>
           </div>
         </div>
       );
