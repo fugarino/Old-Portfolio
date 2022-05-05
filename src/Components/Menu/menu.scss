@@ -80,11 +80,6 @@
       flex-direction: column;
       width: 100vw;
 
-      .icon {
-        color: #6e6b81;
-        font-size: 1rem;
-      }
-
       .top {
         display: flex;
         flex-direction: column;
@@ -101,12 +96,16 @@
         font-size: 1.3rem;
         background-color: transparent;
         text-align: left;
-        color: #3a3847;
+        color: #6e6b81;
         display: flex;
         align-items: center;
         border-radius: 5px;
         padding: 0.5rem;
         cursor: pointer;
+
+        .icon {
+          font-size: 1rem;
+        }
 
         &:hover {
           background-color: #3a3847;
