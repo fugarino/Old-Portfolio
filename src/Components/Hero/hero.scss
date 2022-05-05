@@ -4,11 +4,32 @@
   display: flex;
   justify-content: center;
 
+  .icon-btns {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+
+    .icon {
+      margin-bottom: 10px;
+      border: none;
+      background-color: #fff;
+      // font-size: 1.1rem;
+      font-size: 1.3vw;
+      color: gray;
+      cursor: pointer;
+
+      &:hover {
+        color: #ff754e;
+      }
+    }
+  }
+
   .hero-grid {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 3.5rem;
+    margin-left: 2rem;
 
     .hero-text {
       display: flex;
@@ -22,6 +43,7 @@
       h1 {
         // font-size: 3.5rem;
         font-size: 3.9vw;
+        color: #32303e;
         // margin-bottom: 0.3rem;
       }
 
@@ -38,7 +60,7 @@
         color: gray;
       }
 
-      button {
+      .contact-btn {
         border: none;
         padding: 0.6rem 0;
         font-family: "Poppins";

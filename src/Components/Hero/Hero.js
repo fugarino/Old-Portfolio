@@ -1,9 +1,20 @@
 import React from "react";
 import Image from "./NewHero.gif";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Hero = () => {
   return (
     <section className="hero">
+      <aside className="icon-btns">
+        <button className="icon">
+          <FontAwesomeIcon icon={faGithub} />
+        </button>
+        <button className="icon">
+          <FontAwesomeIcon icon={faLinkedinIn} />
+        </button>
+      </aside>
       <div className="hero-grid">
         <div className="hero-text">
           <h1>Christian Fugarino</h1>
@@ -11,7 +22,7 @@ const Hero = () => {
           <p>
             Hi, I'm Christian. I share an immense passion for the web. <br /> Also, cats are better than dogs.
           </p>
-          <button>Contact me!</button>
+          <button className="contact-btn">Contact me!</button>
         </div>
         <div className="hero-img">
           <img src={Image} alt="hero"></img>

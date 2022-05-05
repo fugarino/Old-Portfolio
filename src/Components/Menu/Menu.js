@@ -14,7 +14,7 @@ const Menu = ({ handleClick, menuIcon, menuSize }) => {
     <menu className="menu">
       <div className="container">
         <button className={menuIcon} onClick={handleClick}></button>
-        <div className={menuSize}></div>
+        <div className={menuSize}>{/* Add Menu Content Here */}</div>
       </div>
     </menu>
   );
