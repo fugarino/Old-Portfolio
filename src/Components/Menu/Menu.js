@@ -1,20 +1,11 @@
 import React from "react";
 
-const Menu = ({ handleClick, menuIcon, menuSize }) => {
-  // console.log(closeMenu);
-  // const [menuSize, setMenuSize] = useState("collapsed");
-  // const [menuIcon, setMenuIcon] = useState("hamburger");
-
-  // const handlClick = () => {
-  //   setMenuSize(menuSize === "collapsed" ? "expanded" : "collapsed");
-  //   setMenuIcon(menuIcon === "hamburger" ? "close" : "hamburger");
-  // };
-
+const Menu = ({ handleClick, menuIcon, content }) => {
   return (
     <menu className="menu">
       <div className="container">
         <button className={menuIcon} onClick={handleClick}></button>
-        <div className={menuSize}>{/* Add Menu Content Here */}</div>
+        {content}
       </div>
     </menu>
   );
