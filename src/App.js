@@ -21,39 +21,51 @@ function App() {
     if (menuSize === "expanded") {
       setContent(
         <div className={menuSize}>
-          <div className="menu-content">
-            <div className="top">
-              <h4>Content</h4>
-              <button>
-                <FontAwesomeIcon icon={faFolderOpen} className="icon" />
-                <h3>Projects</h3>
+          <div className="menu-content" id="press">
+            <div className="top" id="press">
+              <h4 id="press">Content</h4>
+              <button id="press">
+                <FontAwesomeIcon id="press" icon={faFolderOpen} className="icon" />
+                <h3 id="press">Projects</h3>
               </button>
-              <button>
-                <FontAwesomeIcon icon={faFileCode} className="icon code-icon" />
-                <h3 className="skills">Skills</h3>
+              <button id="press">
+                <FontAwesomeIcon id="press" icon={faFileCode} className="icon code-icon" />
+                <h3 id="press" className="skills">
+                  Skills
+                </h3>
               </button>
-              <button className="contact">
-                <FontAwesomeIcon icon={faAddressBook} className="icon contact-icon" />
-                <h3 className="contact-text">Contact</h3>
+              <button id="press" className="contact">
+                <FontAwesomeIcon id="press" icon={faAddressBook} className="icon contact-icon" />
+                <h3 id="press" className="contact-text">
+                  Contact
+                </h3>
               </button>
-              <h4 className="resources">Resources</h4>
-              <button>
-                <FontAwesomeIcon icon={faLinkedinIn} className="icon" />
-                <h3 className="linkedin">Linked In</h3>
+              <h4 id="press" className="resources">
+                Resources
+              </h4>
+              <button id="press">
+                <FontAwesomeIcon id="press" icon={faLinkedinIn} className="icon" />
+                <h3 id="press" className="linkedin">
+                  Linked In
+                </h3>
               </button>
-              <button>
-                <FontAwesomeIcon icon={faGithub} className="icon" />
-                <h3 className="github">GitHub</h3>
+              <button id="press" className="menu-btn">
+                <FontAwesomeIcon id="press" icon={faGithub} className="icon" />
+                <h3 id="press" className="github">
+                  GitHub
+                </h3>
               </button>
             </div>
-            <div className="bottom">
-              <button>
-                <FontAwesomeIcon icon={faHdd} className="icon" />
-                <h3>Download CV</h3>
+            <div id="press" className="bottom">
+              <button id="press">
+                <FontAwesomeIcon id="press" icon={faHdd} className="icon" />
+                <h3 id="press">Download CV</h3>
               </button>
-              <button>
-                <FontAwesomeIcon icon={faClipboard} className="icon" />
-                <h3 className="email">Copy Email</h3>
+              <button id="press">
+                <FontAwesomeIcon id="press" icon={faClipboard} className="icon" />
+                <h3 id="press" className="email">
+                  Copy Email
+                </h3>
               </button>
             </div>
           </div>
@@ -70,8 +82,8 @@ function App() {
   };
 
   const closeMenu = (e) => {
-    console.log(e.target.className);
-    if (menuSize !== "collapsed" && e.target.className !== "expanded") {
+    console.log(e.target.id);
+    if (menuSize !== "collapsed" && e.target.className !== "expanded" && e.target.id !== "press") {
       setMenuSize("collapsed");
       setMenuIcon("hamburger");
     }
