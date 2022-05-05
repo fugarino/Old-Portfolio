@@ -29,21 +29,21 @@ function App() {
                 <h3>Projects</h3>
               </button>
               <button>
-                <FontAwesomeIcon icon={faFileCode} className="icon" />
-                <h3>Skills</h3>
+                <FontAwesomeIcon icon={faFileCode} className="icon code-icon" />
+                <h3 className="skills">Skills</h3>
               </button>
               <button className="contact">
-                <FontAwesomeIcon icon={faAddressBook} className="icon" />
-                <h3>Contact</h3>
+                <FontAwesomeIcon icon={faAddressBook} className="icon contact-icon" />
+                <h3 className="contact-text">Contact</h3>
               </button>
               <h4 className="resources">Resources</h4>
               <button>
                 <FontAwesomeIcon icon={faLinkedinIn} className="icon" />
-                <h3>Linked In</h3>
+                <h3 className="linkedin">Linked In</h3>
               </button>
               <button>
                 <FontAwesomeIcon icon={faGithub} className="icon" />
-                <h3>GitHub</h3>
+                <h3 className="github">GitHub</h3>
               </button>
             </div>
             <div className="bottom">
@@ -53,7 +53,7 @@ function App() {
               </button>
               <button>
                 <FontAwesomeIcon icon={faClipboard} className="icon" />
-                <h3>Copy Email</h3>
+                <h3 className="email">Copy Email</h3>
               </button>
             </div>
           </div>
