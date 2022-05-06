@@ -108,6 +108,7 @@ function App() {
       <div className="tag contact-tag">{"<Contact>"}</div>
       <Contact />
       <div className="tag contact-tag">{"</Contact>"}</div>
+      <div className="copyright">&copy; 2022 Christian Fugarino. All rights reserved.</div>
     </div>
   );
 }
