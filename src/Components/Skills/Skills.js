@@ -44,7 +44,7 @@ const Skills = () => {
           <h4>Git</h4>
         </div>
         <div className="item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="figma" />
           <h4>Figma</h4>
         </div>
       </main>
