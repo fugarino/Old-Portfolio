@@ -3,6 +3,7 @@
 @import "./Components/Nav/nav.scss";
 @import "./Components/Projects/projects.scss";
 @import "./Components/Skills/skills.scss";
+@import "./Components/Contact/contact.scss";
 
 * {
   padding: 0;
@@ -23,6 +24,9 @@
       user-select: none;
     }
     .project-tag {
+      margin: 1rem 0;
+    }
+    .contact-tag {
       margin: 1rem 0;
     }
   }

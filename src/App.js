@@ -4,6 +4,7 @@ import Menu from "./Components/Menu/Menu";
 import Hero from "./Components/Hero/Hero";
 import Projects from "./Components/Projects/Projects";
 import Skills from "./Components/Skills/Skills";
+import Contact from "./Components/Contact/Contact";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFolderOpen } from "@fortawesome/free-regular-svg-icons";
 import { faFileCode } from "@fortawesome/free-regular-svg-icons";
@@ -104,6 +105,9 @@ function App() {
       <div className="tag skill-tag">{"<Skills>"}</div>
       <Skills />
       <div className="tag skill-tag">{"</Skills>"}</div>
+      <div className="tag contact-tag">{"<Contact>"}</div>
+      <Contact />
+      <div className="tag contact-tag">{"</Contact>"}</div>
     </div>
   );
 }

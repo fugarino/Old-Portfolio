@@ -5,7 +5,6 @@ import { faGitAlt } from "@fortawesome/free-brands-svg-icons";
 const Skills = () => {
   return (
     <section className="skills-section">
-      <h2 className="header">Skills</h2>
       <main className="skills-grid">
         <div className="item">
           <i class="devicon-html5-plain colored"></i>
