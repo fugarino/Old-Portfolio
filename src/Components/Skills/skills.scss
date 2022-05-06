@@ -1,6 +1,6 @@
 .skills-section {
-  margin: 2rem 1rem;
-  height: 20vw;
+  margin: 1rem 1rem;
+  height: 18vw;
   user-select: none;
 
   .header {
@@ -15,11 +15,11 @@
     grid-gap: 1px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    margin: 0 2rem;
+    margin: 0 3rem;
   }
 
   .item {
-    height: 10vw;
+    height: 9vw;
     display: flex;
     flex-direction: column;
     align-items: center;
