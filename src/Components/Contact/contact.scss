@@ -12,6 +12,13 @@
     align-items: center;
     justify-content: center;
     z-index: -9;
+    position: relative;
+
+    svg {
+      position: absolute;
+      bottom: 0;
+      z-index: -2;
+    }
 
     .form-text {
       width: 30%;
