@@ -1,6 +1,7 @@
 @import "./Components/Menu/menu.scss";
 @import "./Components/Hero/hero.scss";
 @import "./Components/Nav/nav.scss";
+@import "./Components/Projects/projects.scss";
 
 * {
   padding: 0;
@@ -19,6 +20,9 @@
       color: rgb(161, 161, 161);
       font-family: "Kalam";
       user-select: none;
+    }
+    .project-tag {
+      margin: 1rem 0;
     }
   }
 }

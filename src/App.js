@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Nav from "./Components/Nav/Nav";
 import Menu from "./Components/Menu/Menu";
 import Hero from "./Components/Hero/Hero";
+import Projects from "./Components/Projects/Projects";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFolderOpen } from "@fortawesome/free-regular-svg-icons";
 import { faFileCode } from "@fortawesome/free-regular-svg-icons";
@@ -93,9 +94,12 @@ function App() {
     <div className="App" onClick={closeMenu}>
       <Nav />
       <Menu handleClick={handleClick} menuIcon={menuIcon} menuSize={menuSize} content={content} />
-      <span className="tag">{"<About Me>"}</span>
+      <div className="tag">{"<About Me>"}</div>
       <Hero />
-      <span className="tag">{"</About Me>"}</span>
+      <div className="tag">{"</About Me>"}</div>
+      <div className="tag project-tag">{"<Projects>"}</div>
+      <Projects />
+      <div className="tag project-tag">{"</Projects>"}</div>
     </div>
   );
 }
