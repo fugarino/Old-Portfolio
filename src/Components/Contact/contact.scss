@@ -1,8 +1,17 @@
+::placeholder {
+  color: #b6b6b6;
+}
+
 .contact-section {
   margin: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   .form-container {
-    height: 30vw;
-    border-radius: 20px;
+    height: 25vw;
+    width: 70%;
+    // border-radius: 0px;
     overflow: hidden;
     background-color: #eff5f7;
     margin: 0 3rem;
@@ -11,17 +20,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: -9;
     position: relative;
 
-    svg {
-      position: absolute;
-      bottom: 0;
-      z-index: -2;
-    }
-
     .form-text {
-      width: 30%;
+      width: 50%;
       margin-left: 4rem;
 
       h2 {
@@ -35,18 +37,61 @@
       }
     }
 
-    .form-div {
-      width: 70%;
+    form {
       height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      width: 50%;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      row-gap: 10px;
+      // background-color: #fff;
+      border-radius: 20px;
+      padding: 1.5rem 2.5rem;
 
-      .form-cont {
+      input {
+        // border: 2px solid #3a3847;
+        border: none;
+        padding: 1rem;
+        border-radius: 5px;
+        // font-size: 0.9rem;
+        font-size: 1vw;
         background-color: #fff;
-        border-radius: 10px;
-        height: 26vw;
-        width: 93%;
+        outline-color: #3a3847;
+
+        &:first-child {
+          grid-column: span 2;
+        }
+      }
+
+      textArea {
+        grid-column: span 2;
+        grid-row: span 3;
+        // border: 2px solid #3a3847;
+        border: none;
+        padding: 1rem;
+        border-radius: 5px;
+        resize: none;
+        font-family: "Poppins";
+        font-size: 1vw;
+        background-color: #fff;
+        outline-color: #3a3847;
+      }
+
+      button {
+        grid-column: span 2;
+        // border: 2px solid #3a3847;
+        border: none;
+        border-radius: 5px;
+        background-color: #3a3847;
+        color: #fff;
+        font-size: 1vw;
+        font-family: "Poppins";
+        cursor: pointer;
+
+        &:hover {
+          background-color: #fff;
+          color: #3a3847;
+        }
       }
     }
   }
