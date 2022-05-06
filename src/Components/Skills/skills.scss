@@ -14,10 +14,30 @@
     grid-gap: 1px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    margin: 0 2rem;
   }
 
   .item {
     height: 12.3vw;
-    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+
+    .git-alt {
+      color: #f1502f;
+    }
+
+    h4 {
+      margin-top: 1rem;
+      //   font-size: 1rem;
+      font-size: 1vw;
+      font-weight: 500;
+    }
+
+    img {
+      width: 45px;
+    }
   }
 }
