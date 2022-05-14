@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "./NewHero.gif";
+import Image from "./Images/NewHero.gif";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
