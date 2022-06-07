@@ -7,35 +7,35 @@ const Skills = () => {
     <section className="skills-section">
       <main className="skills-grid">
         <div className="item">
-          <i class="devicon-html5-plain colored"></i>
+          <i className="devicon-html5-plain colored"></i>
           <h4>HTML</h4>
         </div>
         <div className="item">
-          <i class="devicon-css3-plain colored"></i>
+          <i className="devicon-css3-plain colored"></i>
           <h4>CSS</h4>
         </div>
         <div className="item">
-          <i class="devicon-javascript-plain colored"></i>
+          <i className="devicon-javascript-plain colored"></i>
           <h4>JavaScript</h4>
         </div>
         <div className="item">
-          <i class="devicon-typescript-plain colored"></i>
+          <i className="devicon-typescript-plain colored"></i>
           <h4>TypeScript</h4>
         </div>
         <div className="item">
-          <i class="devicon-react-original colored"></i>
+          <i className="devicon-react-original colored"></i>
           <h4>React</h4>
         </div>
         <div className="item">
-          <i class="devicon-redux-original colored"></i>
+          <i className="devicon-redux-original colored"></i>
           <h4>Redux</h4>
         </div>
         <div className="item">
-          <i class="devicon-sass-original colored"></i>
+          <i className="devicon-sass-original colored"></i>
           <h4>Sass</h4>
         </div>
         <div className="item">
-          <i class="devicon-tailwindcss-plain colored"></i>
+          <i className="devicon-tailwindcss-plain colored"></i>
           <h4>Tailwind</h4>
         </div>
         <div className="item">
@@ -43,7 +43,10 @@ const Skills = () => {
           <h4>Git</h4>
         </div>
         <div className="item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="figma" />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+            alt="figma"
+          />
           <h4>Figma</h4>
         </div>
       </main>
