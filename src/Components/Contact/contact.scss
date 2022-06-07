@@ -4,7 +4,7 @@
 
 .contact-section {
   max-height: 450px;
-  margin: 1rem 1rem;
+  margin: 3rem 1rem;
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -79,7 +79,6 @@
     // border-radius: 0px;
     overflow: hidden;
     // background-color: #eff5f7;
-    border-radius: 20px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -87,88 +86,101 @@
     position: relative;
 
     .form-img {
-      width: 60%;
+      width: 50%;
       position: relative;
 
       img {
         width: 100%;
-        position: relative;
-        top: -55px;
+        // position: relative;
+        // top: -55px;
+        user-select: none;
+        pointer-events: none;
       }
     }
 
     .form-div {
-      width: 40%;
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-      .form-text {
-        margin-left: 1rem;
+      .form-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 400px;
 
-        h2 {
-          font-size: 3vw;
-          color: #3a3847;
-        }
+        .form-text {
+          margin-bottom: 1rem;
+          width: 100%;
 
-        p {
-          font-size: 1.5vw;
-          color: #4b4958;
-        }
-      }
-
-      form {
-        height: 100%;
-        width: 50%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        column-gap: 30px;
-        row-gap: 15px;
-        // background-color: #c8dfe6;
-        border-radius: 20px;
-        padding: 2rem;
-
-        input {
-          // border: 2px solid #3a3847;
-          border: none;
-          padding: 0.5rem;
-          // border-radius: 5px;
-          // border-bottom: 1px solid rgb(199, 199, 199);
-          // font-size: 0.9rem;
-          font-size: 1vw;
-          background-color: #fff;
-          // outline-color: #3a3847;
-        }
-
-        textArea {
-          grid-column: span 2;
-          grid-row: span 1;
-          // border: 2px solid #3a3847;
-          border: none;
-          padding: 0.5rem;
-          padding-top: 1rem;
-          // border-radius: 5px;
-          // border-bottom: 1px solid rgb(199, 199, 199);
-          resize: none;
-          font-family: "Poppins";
-          font-size: 1vw;
-          background-color: #fff;
-          // outline-color: #3a3847;
-        }
-
-        button {
-          grid-column: span 2;
-          // border: 2px solid #3a3847;
-          border: none;
-          border-radius: 5px;
-          background-color: #3a3847;
-          color: #fff;
-          font-size: 1vw;
-          font-family: "Poppins";
-          cursor: pointer;
-
-          &:hover {
-            background-color: #fff;
+          h2 {
+            font-size: 3vw;
             color: #3a3847;
+            margin-bottom: 0;
+          }
+
+          p {
+            position: relative;
+            top: -5px;
+            font-size: 1.3vw;
+            color: #5b5967;
+          }
+        }
+
+        form {
+          height: 100%;
+          width: 100%;
+          display: grid;
+          grid-template-rows: repeat(5, 1fr);
+          row-gap: 25px;
+
+          input {
+            // border: 2px solid #3a3847;
+            border: none;
+            border-bottom: 1px solid #d6d6d6;
+            // border-bottom: 2px solid #4b4958;
+            // border-radius: 5px;
+            // border-bottom: 1px solid rgb(199, 199, 199);
+            // font-size: 0.9rem;
+            font-size: 1vw;
+            background-color: #fff;
+            outline: none;
+            // outline-color: #3a3847;
+          }
+
+          textArea {
+            // border: 2px solid #3a3847;
+            grid-row: span 2;
+            border: none;
+            border-bottom: 1px solid #d6d6d6;
+            padding: 0.5rem 0;
+            // border-radius: 5px;
+            // border-bottom: 1px solid rgb(199, 199, 199);
+            resize: none;
+            font-family: "Poppins";
+            font-size: 1vw;
+            background-color: #fff;
+            outline: none;
+            // outline-color: #3a3847;
+          }
+
+          button {
+            padding: 0.5rem;
             border: 2px solid #3a3847;
+            border-radius: 5px;
+            background-color: #3a3847;
+            color: #fff;
+            font-size: 1vw;
+            font-family: "Poppins";
+            cursor: pointer;
+
+            &:hover {
+              background-color: #fff;
+              color: #3a3847;
+            }
           }
         }
       }

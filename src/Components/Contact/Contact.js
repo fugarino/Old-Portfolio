@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "./Email-Illustration.png";
+import Image from "./Email2.gif";
 
 const Contact = () => {
   return (
@@ -17,17 +17,19 @@ const Contact = () => {
           <img src={Image} alt="email" />
         </div>
         <div className="form-div">
-          <div className="form-text">
-            <h2>Get in touch</h2>
-            <p>Have any question?</p>
-            <p>Shoot me an email.</p>
+          <div className="form-container">
+            <div className="form-text">
+              <h2>Get in touch</h2>
+              <p>Have any question, email me.</p>
+              {/* <p>Shoot me an email.</p> */}
+            </div>
+            <form className="form">
+              <input type="text" placeholder="Name" />
+              <input type="text" placeholder="Email" />
+              <textarea type="text" placeholder="Message" />
+              <button type="submit">Submit</button>
+            </form>
           </div>
-          <form className="form">
-            <input type="text" placeholder="Name" />
-            <input type="text" placeholder="Email" />
-            <textarea type="text" placeholder="Message" />
-            <button type="submit">Submit</button>
-          </form>
         </div>
       </div>
     </section>
