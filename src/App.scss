@@ -30,11 +30,43 @@
       margin: 1rem 0;
     }
 
-    .copyright {
-      color: #ff754e;
-      text-align: right;
-      font-weight: 600;
-      font-size: 1rem;
+    .copyright-div {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      .copyright {
+        color: #ff754e;
+        font-weight: 700;
+        font-size: 1.4rem;
+      }
+
+      .cvEmail {
+        margin-right: 25px;
+
+        .cv-email {
+          font-size: 0.8rem;
+          margin-left: 20px;
+          position: relative;
+          bottom: 2px;
+          cursor: pointer;
+          color: rgb(94, 94, 94);
+
+          &:hover {
+            color: #000;
+          }
+        }
+        .divider {
+          position: relative;
+          bottom: 1px;
+          font-size: 0.8rem;
+          margin-left: 5px;
+          color: rgb(126, 126, 126);
+        }
+        .mail {
+          margin-left: 5px;
+        }
+      }
     }
   }
 }

@@ -1,5 +1,8 @@
 import React from "react";
 import Image from "./Email2.gif";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
   return (
@@ -12,6 +15,14 @@ const Contact = () => {
         <div className="ball5"></div>
         <div className="ball6"></div>
       </div> */}
+      <aside className="icon-btns">
+        <button className="icon">
+          <FontAwesomeIcon icon={faGithub} />
+        </button>
+        <button className="icon">
+          <FontAwesomeIcon icon={faLinkedinIn} />
+        </button>
+      </aside>
       <div className="form-container">
         <div className="form-img">
           <img src={Image} alt="email" />

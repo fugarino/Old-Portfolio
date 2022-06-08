@@ -108,7 +108,14 @@ function App() {
       <div className="tag contact-tag">{"<Contact>"}</div>
       <Contact />
       <div className="tag contact-tag">{"</Contact>"}</div>
-      <div className="copyright">&copy; 2022 Christian Fugarino. All rights reserved.</div>
+      <div className="copyright-div">
+        <div className="cvEmail">
+          <span className="cv-email">download cv</span>
+          <span className="divider">/</span>
+          <span className="cv-email mail">copy email</span>
+        </div>
+        <span className="copyright">&copy; 2022 Christian Fugarino</span>
+      </div>
     </div>
   );
 }
