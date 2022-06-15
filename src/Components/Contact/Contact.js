@@ -7,14 +7,6 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 const Contact = () => {
   return (
     <section className="contact-section">
-      {/* <div className="balls">
-        <div className="ball1"></div>
-        <div className="ball2"></div>
-        <div className="ball3"></div>
-        <div className="ball4"></div>
-        <div className="ball5"></div>
-        <div className="ball6"></div>
-      </div> */}
       <aside className="icon-btns">
         <button className="icon">
           <FontAwesomeIcon icon={faGithub} />

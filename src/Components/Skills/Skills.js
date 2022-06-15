@@ -31,23 +31,20 @@ const Skills = () => {
           <h4>Redux</h4>
         </div>
         <div className="item">
+          <i class="devicon-nextjs-original-wordmark colored"></i>
+          <h4>Next.js</h4>
+        </div>
+        <div className="item">
+          <i class="devicon-jest-plain colored"></i>
+          <h4>Jest</h4>
+        </div>
+        <div className="item">
           <i className="devicon-sass-original colored"></i>
           <h4>Sass</h4>
         </div>
         <div className="item">
-          <i className="devicon-tailwindcss-plain colored"></i>
-          <h4>Tailwind</h4>
-        </div>
-        <div className="item">
           <FontAwesomeIcon icon={faGitAlt} className="git-alt" />
           <h4>Git</h4>
-        </div>
-        <div className="item">
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
-            alt="figma"
-          />
-          <h4>Figma</h4>
         </div>
       </main>
     </section>
