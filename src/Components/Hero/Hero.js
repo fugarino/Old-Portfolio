@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
-const Hero = () => {
+const Hero = ({ darkMode }) => {
   return (
     <section className="hero">
       <aside className="icon-btns">
@@ -27,7 +27,7 @@ const Hero = () => {
           <button className="contact-btn">Contact me!</button>
         </div>
         <div className="hero-img">
-          <img src={HeroImage} alt="hero"></img>
+          <img src={darkMode ? HeroImageDark : HeroImage} alt="hero"></img>
         </div>
       </div>
     </section>

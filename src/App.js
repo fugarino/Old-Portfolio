@@ -19,6 +19,7 @@ function App() {
   const [menuSize, setMenuSize] = useState("collapsed");
   const [menuIcon, setMenuIcon] = useState("hamburger");
   const [content, setContent] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     if (menuSize === "expanded") {
@@ -97,7 +98,7 @@ function App() {
       <Nav />
       <Menu handleClick={handleClick} menuIcon={menuIcon} menuSize={menuSize} content={content} />
       <div className="tag">{"<About Me>"}</div>
-      <Hero />
+      <Hero darkMode={darkMode} />
       <div className="tag">{"</About Me>"}</div>
       <div className="tag project-tag">{"<Projects>"}</div>
       <Projects />
