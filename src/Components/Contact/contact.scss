@@ -71,7 +71,6 @@
         flex-direction: column;
 
         h5 {
-          // color: #2b2936;
           color: #3a3847;
           font-size: 2rem;
           font-weight: 600;
@@ -92,17 +91,17 @@
           padding: 0.9rem 2rem;
           border: none;
           border-radius: 7px;
-          // background-color: #ff754e;
-          background-color: #3a3847;
+          background-color: #ff754e;
+          // background-color: #3a3847;
           color: #fff;
           z-index: 2;
-          // border: 2px solid #ff754e;
-          border: 2px solid #3a3847;
+          border: 2px solid #ff754e;
+          // border: 2px solid #3a3847;
           cursor: pointer;
           &:hover {
             background-color: #ffe5d4;
-            // color: #ff754e;
-            color: #3a3847;
+            color: #ff754e;
+            // color: #3a3847;
           }
         }
       }
