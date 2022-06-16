@@ -33,7 +33,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="contact-btn-container">
-            <button className="contact-btn">Contact me!</button>
+            <button className="contact-btn">Say hi!</button>
           </div>
         </div>
       </div>
