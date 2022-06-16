@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-// import Image from "./Cat.png";
+import Image from "./CatAlt.png";
 
 const Contact = () => {
   return (
@@ -16,7 +16,7 @@ const Contact = () => {
         </button>
       </aside>
       <div className="cat-container">
-        {/* <img src={Image} alt="cat" /> */}
+        <img src={Image} alt="cat" />
         <div className="contact-container">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path
