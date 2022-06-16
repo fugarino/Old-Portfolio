@@ -31,11 +31,11 @@ const Skills = () => {
           <h4>Redux</h4>
         </div>
         <div className="item">
-          <i class="devicon-nextjs-original-wordmark colored"></i>
+          <i className="devicon-nextjs-original-wordmark colored"></i>
           <h4>Next.js</h4>
         </div>
         <div className="item">
-          <i class="devicon-jest-plain colored"></i>
+          <i className="devicon-jest-plain colored"></i>
           <h4>Jest</h4>
         </div>
         <div className="item">
