@@ -5,6 +5,7 @@
   position: absolute;
   right: 0;
   bottom: 0;
+  // background-color: aqua;
 }
 
 .light {
@@ -20,19 +21,19 @@
   width: 23px;
   height: 23px;
   // background-color: rgb(207, 207, 207);
-  background-color: rgb(221, 221, 221);
+  background-color: rgb(229, 229, 229);
   border-radius: 50%;
 }
 
 .bulb::before {
   content: "";
   position: absolute;
-  left: 5.5px;
+  left: 5.75px;
   top: -12px;
   height: 20px;
   width: 11px;
   // background-color: rgb(207, 207, 207);
-  background-color: rgb(221, 221, 221);
+  background-color: rgb(229, 229, 229);
   border-top: 7px solid #000;
   border-radius: 2px;
 }
@@ -40,25 +41,34 @@
 .bulb span:nth-child(1) {
   position: absolute;
   top: -5px;
-  left: -2.8px;
+  left: -2.6px;
   display: block;
   width: 9.6px;
   height: 9.6px;
-  transform: rotate(338deg);
+  transform: rotate(341deg);
   background-color: transparent;
   border-bottom-right-radius: 9px;
-  box-shadow: 5px 5px 0 1px rgb(221, 221, 221);
+  box-shadow: 5px 5px 0 1px rgb(229, 229, 229);
 }
 
 .bulb span:nth-child(2) {
   position: absolute;
-  top: -5.1px;
-  left: 15.5px;
+  top: -5px;
+  left: 15.8px;
   display: block;
   width: 9.6px;
   height: 9.6px;
-  transform: rotate(14deg) scaleX(-1);
+  transform: rotate(16deg) scaleX(-1);
   background-color: transparent;
   border-bottom-right-radius: 9px;
-  box-shadow: 5px 5px 0 1px rgb(221, 221, 221);
+  box-shadow: 5px 5px 0 1px rgb(229, 229, 229);
+}
+
+.wire {
+  position: absolute;
+  left: 27.5px;
+  top: 0;
+  width: 2px;
+  height: 20px;
+  background-color: #000;
 }

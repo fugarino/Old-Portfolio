@@ -5,6 +5,7 @@ const LightBulb = () => {
   return (
     <div className="light-bulb-container">
       <div className="light">
+        <div className="wire"></div>
         <div className="bulb">
           <span></span>
           <span></span>
