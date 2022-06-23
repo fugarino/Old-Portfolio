@@ -1,5 +1,5 @@
 import React from "react";
-import LightBulb from "./LightBulb";
+import ToggleButton from "./ToggleButton";
 
 const Nav = () => {
   return (
@@ -10,7 +10,7 @@ const Nav = () => {
         <span className="divider">/</span>
         <span className="cv-email mail">copy email</span>
       </div>
-      <LightBulb />
+      <ToggleButton text="Dark" />
     </nav>
   );
 };
