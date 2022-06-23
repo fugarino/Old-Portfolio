@@ -2,7 +2,8 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import Image from "./CatAlt.png";
+// import Image from "./CatAlt.png";
+import Image from "./javascript_illustration.svg";
 
 const Contact = () => {
   return (

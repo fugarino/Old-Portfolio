@@ -96,7 +96,7 @@ function App() {
   return (
     <div className="App" onClick={closeMenu}>
       <Nav />
-      <Menu handleClick={handleClick} menuIcon={menuIcon} menuSize={menuSize} content={content} />
+      {/* <Menu handleClick={handleClick} menuIcon={menuIcon} menuSize={menuSize} content={content} /> */}
       <div className="tag">{"<About Me>"}</div>
       <Hero darkMode={darkMode} />
       <div className="tag">{"</About Me>"}</div>

@@ -1,0 +1,64 @@
+.light-bulb-container {
+  // background-color: aquamarine;
+  height: calc(100% + 7px);
+  width: 55px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.light {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.bulb {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 10px);
+  width: 23px;
+  height: 23px;
+  // background-color: rgb(207, 207, 207);
+  background-color: rgb(221, 221, 221);
+  border-radius: 50%;
+}
+
+.bulb::before {
+  content: "";
+  position: absolute;
+  left: 5.5px;
+  top: -12px;
+  height: 20px;
+  width: 11px;
+  // background-color: rgb(207, 207, 207);
+  background-color: rgb(221, 221, 221);
+  border-top: 7px solid #000;
+  border-radius: 2px;
+}
+
+.bulb span:nth-child(1) {
+  position: absolute;
+  top: -5px;
+  left: -2.8px;
+  display: block;
+  width: 9.6px;
+  height: 9.6px;
+  transform: rotate(338deg);
+  background-color: transparent;
+  border-bottom-right-radius: 9px;
+  box-shadow: 5px 5px 0 1px rgb(221, 221, 221);
+}
+
+.bulb span:nth-child(2) {
+  position: absolute;
+  top: -5.1px;
+  left: 15.5px;
+  display: block;
+  width: 9.6px;
+  height: 9.6px;
+  transform: rotate(14deg) scaleX(-1);
+  background-color: transparent;
+  border-bottom-right-radius: 9px;
+  box-shadow: 5px 5px 0 1px rgb(221, 221, 221);
+}

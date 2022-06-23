@@ -3,34 +3,41 @@ nav {
   position: relative;
   top: -10px;
   user-select: none;
+  width: 100%;
 
-  .logo {
-    color: #ff754e;
-    font-weight: 700;
-    font-size: 2rem;
-    cursor: pointer;
-  }
+  .nav-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
 
-  .cv-email {
-    font-size: 0.8rem;
-    margin-left: 20px;
-    position: relative;
-    top: 6px;
-    cursor: pointer;
-    color: rgb(94, 94, 94);
-
-    &:hover {
-      color: #000;
+    .logo {
+      color: #ff754e;
+      font-weight: 700;
+      font-size: 2rem;
+      cursor: pointer;
     }
-  }
-  .divider {
-    font-size: 0.8rem;
-    position: relative;
-    top: 6px;
-    margin-left: 5px;
-    color: rgb(126, 126, 126);
-  }
-  .mail {
-    margin-left: 5px;
+
+    .cv-email {
+      font-size: 0.8rem;
+      margin-left: 20px;
+      position: relative;
+      top: 6px;
+      cursor: pointer;
+      color: rgb(94, 94, 94);
+
+      &:hover {
+        color: #000;
+      }
+    }
+    .divider {
+      font-size: 0.8rem;
+      position: relative;
+      top: 6px;
+      margin-left: 5px;
+      color: rgb(126, 126, 126);
+    }
+    .mail {
+      margin-left: 5px;
+    }
   }
 }
