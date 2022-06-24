@@ -11,7 +11,15 @@ nav {
   width: 100vw;
   // margin: 0 2rem;
   padding: 0 2rem;
-  z-index: 99;
+  z-index: 10;
+
+  // .hidden {
+  //   display: hidden;
+  // }
+
+  // .shown {
+  //   display: flex;
+  // }
 
   .nav-container {
     display: flex;
@@ -47,4 +55,10 @@ nav {
       margin-left: 5px;
     }
   }
+}
+
+.help {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }

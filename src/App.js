@@ -13,12 +13,14 @@ import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faClipboard } from "@fortawesome/free-regular-svg-icons";
 import { faHdd } from "@fortawesome/free-regular-svg-icons";
 import "./App.scss";
+import Modal from "./Components/Nav/Modal";
 
 function App() {
   const [menuSize, setMenuSize] = useState("collapsed");
   const [menuIcon, setMenuIcon] = useState("hamburger");
   const [content, setContent] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     if (menuSize === "expanded") {
@@ -83,7 +85,6 @@ function App() {
     setMenuSize(menuSize === "collapsed" ? "expanded" : "collapsed");
     setMenuIcon(menuIcon === "hamburger" ? "close" : "hamburger");
   };
-
   const closeMenu = (e) => {
     if (menuSize !== "collapsed" && e.target.className !== "expanded" && e.target.id !== "press") {
       setMenuSize("collapsed");
@@ -91,9 +92,16 @@ function App() {
     }
   };
 
+  // Test
+  const toggleMenu = () => {
+    console.log("toggled");
+    setIsMenuOpen((prevIsMenuOpen) => !prevIsMenuOpen);
+  };
+
   return (
     <>
-      <Nav />
+      <Modal isMenuOpen={isMenuOpen} />
+      <Nav toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
       <div className="App" onClick={closeMenu}>
         {/* <Menu handleClick={handleClick} menuIcon={menuIcon} menuSize={menuSize} content={content} /> */}
         <div className="tag about-tag">{"<About Me>"}</div>
