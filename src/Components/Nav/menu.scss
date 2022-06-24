@@ -1,0 +1,39 @@
+.menu {
+  button {
+    padding: 0.5rem;
+    position: relative;
+    height: 2.5rem;
+    width: 2.5rem;
+    z-index: 100;
+    border: none;
+    cursor: pointer;
+  }
+
+  .overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    transition: all 0.2s ease;
+    opacity: 0;
+    z-index: -99;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+
+    ul {
+      list-style: none;
+      text-align: right;
+      margin-right: 3rem;
+    }
+  }
+
+  .open {
+    opacity: 1;
+    transition: all 0.2s ease;
+    z-index: 99;
+  }
+}

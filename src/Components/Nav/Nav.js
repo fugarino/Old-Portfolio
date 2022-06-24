@@ -1,5 +1,5 @@
 import React from "react";
-import ToggleButton from "./ToggleButton";
+import Menu from "./Menu";
 
 const Nav = () => {
   return (
@@ -10,7 +10,7 @@ const Nav = () => {
         <span className="divider">/</span>
         <span className="cv-email mail">copy email</span>
       </div>
-      <ToggleButton text="Dark" />
+      <Menu />
     </nav>
   );
 };

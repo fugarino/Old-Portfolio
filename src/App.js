@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Nav from "./Components/Nav/Nav";
-import Menu from "./Components/Menu/Menu";
 import Hero from "./Components/Hero/Hero";
 import Projects from "./Components/Projects/Projects";
 import Skills from "./Components/Skills/Skills";
@@ -86,7 +85,6 @@ function App() {
   };
 
   const closeMenu = (e) => {
-    console.log(e.target.id);
     if (menuSize !== "collapsed" && e.target.className !== "expanded" && e.target.id !== "press") {
       setMenuSize("collapsed");
       setMenuIcon("hamburger");
@@ -94,30 +92,32 @@ function App() {
   };
 
   return (
-    <div className="App" onClick={closeMenu}>
+    <>
       <Nav />
-      {/* <Menu handleClick={handleClick} menuIcon={menuIcon} menuSize={menuSize} content={content} /> */}
-      <div className="tag">{"<About Me>"}</div>
-      <Hero darkMode={darkMode} />
-      <div className="tag">{"</About Me>"}</div>
-      <div className="tag project-tag">{"<Projects>"}</div>
-      <Projects />
-      <div className="tag project-tag">{"</Projects>"}</div>
-      <div className="tag skill-tag">{"<Skills>"}</div>
-      <Skills />
-      <div className="tag skill-tag">{"</Skills>"}</div>
-      <div className="tag contact-tag">{"<Contact>"}</div>
-      <Contact />
-      <div className="tag contact-tag">{"</Contact>"}</div>
-      <div className="copyright-div">
-        <div className="cvEmail">
-          <span className="cv-email">download cv</span>
-          <span className="divider">/</span>
-          <span className="cv-email mail">copy email</span>
+      <div className="App" onClick={closeMenu}>
+        {/* <Menu handleClick={handleClick} menuIcon={menuIcon} menuSize={menuSize} content={content} /> */}
+        <div className="tag about-tag">{"<About Me>"}</div>
+        <Hero darkMode={darkMode} />
+        <div className="tag">{"</About Me>"}</div>
+        <div className="tag project-tag">{"<Projects>"}</div>
+        <Projects />
+        <div className="tag project-tag">{"</Projects>"}</div>
+        <div className="tag skill-tag">{"<Skills>"}</div>
+        <Skills />
+        <div className="tag skill-tag">{"</Skills>"}</div>
+        <div className="tag contact-tag">{"<Contact>"}</div>
+        <Contact />
+        <div className="tag contact-tag">{"</Contact>"}</div>
+        <div className="copyright-div">
+          <div className="cvEmail">
+            <span className="cv-email">download cv</span>
+            <span className="divider">/</span>
+            <span className="cv-email mail">copy email</span>
+          </div>
+          <span className="copyright">&copy; 2022 Christian Fugarino</span>
         </div>
-        <span className="copyright">&copy; 2022 Christian Fugarino</span>
       </div>
-    </div>
+    </>
   );
 }
 

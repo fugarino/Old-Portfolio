@@ -1,4 +1,3 @@
-@import "./Components/Menu/menu.scss";
 @import "./Components/Hero/hero.scss";
 @import "./Components/Nav/nav.scss";
 @import "./Components/Projects/projects.scss";
@@ -22,6 +21,9 @@
       color: rgb(161, 161, 161);
       font-family: "Kalam";
       user-select: none;
+    }
+    .about-tag {
+      margin-top: 3.5rem;
     }
     .project-tag {
       margin: 1rem 0;
