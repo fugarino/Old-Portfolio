@@ -1,6 +1,7 @@
 import React from "react";
 import HeroImage from "./Images/Hero.gif";
 import HeroImageDark from "./Images/HeroDark.gif";
+import image from "./Images/cat_1.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -28,6 +29,7 @@ const Hero = ({ darkMode }) => {
         </div>
         <div className="hero-img">
           <img src={darkMode ? HeroImageDark : HeroImage} alt="hero"></img>
+          {/* <img src={image} /> */}
         </div>
       </div>
     </section>
