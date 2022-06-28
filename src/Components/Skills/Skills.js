@@ -31,16 +31,18 @@ const Skills = () => {
           <h4>Redux</h4>
         </div>
         <div className="item">
-          <i className="devicon-nextjs-original-wordmark colored"></i>
+          {/* <i className="devicon-nextjs-original-wordmark colored"></i> */}
+          <i class="devicon-gatsby-plain colored"></i>
+          <h4>Gatsby</h4>
+        </div>
+        <div className="item">
+          <i style={{ color: "darkSlateGray" }} className="devicon-nextjs-original colored"></i>
           <h4>Next.js</h4>
         </div>
         <div className="item">
+          {/* <i className="devicon-sass-original colored"></i> */}
           <i className="devicon-jest-plain colored"></i>
           <h4>Jest</h4>
-        </div>
-        <div className="item">
-          <i className="devicon-sass-original colored"></i>
-          <h4>Sass</h4>
         </div>
         <div className="item">
           <FontAwesomeIcon icon={faGitAlt} className="git-alt" />
