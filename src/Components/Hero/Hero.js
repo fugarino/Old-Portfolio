@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImage from "./Images/Hero.gif";
+import HeroImage from "./Images/Hero1.gif";
 // import HeroImageDark from "./Images/HeroDark.gif";
 import HeroImageDark from "./Images/Hero2.gif";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
