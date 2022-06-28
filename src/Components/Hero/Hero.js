@@ -1,7 +1,7 @@
 import React from "react";
 import HeroImage from "./Images/Hero.gif";
 // import HeroImageDark from "./Images/HeroDark.gif";
-import HeroImageDark from "./Images/HeroAltDark.gif";
+import HeroImageDark from "./Images/Hero2.gif";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
