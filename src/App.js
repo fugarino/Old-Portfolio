@@ -19,7 +19,7 @@ function App() {
   const [menuSize, setMenuSize] = useState("collapsed");
   const [menuIcon, setMenuIcon] = useState("hamburger");
   const [content, setContent] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
