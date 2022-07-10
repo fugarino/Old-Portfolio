@@ -81,6 +81,7 @@ function App() {
     }
   }, [menuSize]);
 
+  // Remove
   const handleClick = () => {
     setMenuSize(menuSize === "collapsed" ? "expanded" : "collapsed");
     setMenuIcon(menuIcon === "hamburger" ? "close" : "hamburger");
