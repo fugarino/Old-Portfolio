@@ -93,7 +93,6 @@ function App() {
     }
   };
 
-  // Test
   const toggleMenu = () => {
     console.log("toggled");
     setIsMenuOpen((prevIsMenuOpen) => !prevIsMenuOpen);
